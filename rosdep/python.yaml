@@ -3923,7 +3923,7 @@ python-wxtools:
   debian: [python-wxtools]
   fedora: [wxPython]
   gentoo: [dev-python/wxpython]
-  osx: [wxPython]A
+  osx: [wxPython]
   ubuntu: [python-wxtools]
 python-xdot:
   debian: [xdot]
