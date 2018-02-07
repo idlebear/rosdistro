@@ -99,13 +99,28 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-gbp/actionlib-release.git
-      version: 1.11.11-0
+      version: 1.11.12-0
     source:
       test_pull_requests: true
       type: git
       url: https://github.com/ros/actionlib.git
       version: indigo-devel
     status: maintained
+  adi_driver:
+    doc:
+      type: git
+      url: https://github.com/tork-a/adi_driver.git
+      version: master
+    release:
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/tork-a/adi_driver-release.git
+      version: 1.0.1-0
+    source:
+      type: git
+      url: https://github.com/tork-a/adi_driver.git
+      version: master
+    status: developed
   agvs_common:
     doc:
       type: git
@@ -162,6 +177,16 @@ repositories:
       url: https://github.com/ros/angles.git
       version: master
     status: maintained
+  apriltags2_ros:
+    doc:
+      type: git
+      url: https://github.com/dmalyuta/apriltags2_ros.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/dmalyuta/apriltags2_ros.git
+      version: master
+    status: maintained
   ar_track_alvar:
     doc:
       type: git
@@ -195,6 +220,16 @@ repositories:
       url: https://github.com/AutonomyLab/ardrone_autonomy.git
       version: indigo-devel
     status: developed
+  armadillo2:
+    doc:
+      type: git
+      url: https://github.com/robotican/armadillo2.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/robotican/armadillo2.git
+      version: master
+    status: maintained
   asr_approx_mvbb:
     doc:
       type: git
@@ -513,7 +548,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/crigroup/baldor-release.git
-      version: 0.1.1-0
+      version: 0.1.2-0
     source:
       type: git
       url: https://github.com/crigroup/baldor.git
@@ -713,6 +748,21 @@ repositories:
       url: https://github.com/ros-perception/calibration.git
       version: hydro
     status: maintained
+  camera1394:
+    doc:
+      type: git
+      url: https://github.com/ros-drivers/camera1394.git
+      version: master
+    release:
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/ros-drivers-gbp/camera1394-release.git
+      version: 1.10.1-0
+    source:
+      type: git
+      url: https://github.com/ros-drivers/camera1394.git
+      version: master
+    status: maintained
   camera_info_manager_py:
     doc:
       type: git
@@ -761,6 +811,22 @@ repositories:
       type: git
       url: https://github.com/osrf/capabilities.git
       version: master
+    status: maintained
+  care_o_bot:
+    doc:
+      type: git
+      url: https://github.com/ipa320/care-o-bot.git
+      version: indigo_release_candidate
+    release:
+      packages:
+      - care_o_bot
+      - care_o_bot_desktop
+      - care_o_bot_robot
+      - care_o_bot_simulation
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/ipa320/care-o-bot-release.git
+      version: 0.6.6-0
     status: maintained
   cartesian_msgs:
     doc:
@@ -898,7 +964,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_android-release.git
-      version: 0.1.3-0
+      version: 0.1.4-0
     source:
       type: git
       url: https://github.com/ipa320/cob_android.git
@@ -913,7 +979,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_calibration_data-release.git
-      version: 0.6.7-0
+      version: 0.6.8-0
     source:
       type: git
       url: https://github.com/ipa320/cob_calibration_data.git
@@ -939,7 +1005,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_command_tools-release.git
-      version: 0.6.6-0
+      version: 0.6.7-0
     source:
       type: git
       url: https://github.com/ipa320/cob_command_tools.git
@@ -960,7 +1026,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_common-release.git
-      version: 0.6.7-0
+      version: 0.6.8-0
     source:
       type: git
       url: https://github.com/ipa320/cob_common.git
@@ -986,11 +1052,10 @@ repositories:
       - cob_omni_drive_controller
       - cob_trajectory_controller
       - cob_twist_controller
-      - cob_undercarriage_ctrl_node
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_control-release.git
-      version: 0.7.0-0
+      version: 0.7.1-0
     source:
       type: git
       url: https://github.com/ipa320/cob_control.git
@@ -1010,7 +1075,6 @@ repositories:
       - cob_driver
       - cob_elmo_homing
       - cob_generic_can
-      - cob_head_axis
       - cob_light
       - cob_mimic
       - cob_phidget_em_state
@@ -1027,7 +1091,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_driver-release.git
-      version: 0.6.10-0
+      version: 0.6.11-0
     source:
       type: git
       url: https://github.com/ipa320/cob_driver.git
@@ -1045,7 +1109,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_environments-release.git
-      version: 0.6.5-0
+      version: 0.6.6-0
     source:
       type: git
       url: https://github.com/ipa320/cob_environments.git
@@ -1069,7 +1133,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_extern-release.git
-      version: 0.6.11-0
+      version: 0.6.12-0
     source:
       type: git
       url: https://github.com/ipa320/cob_extern.git
@@ -1087,7 +1151,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_gazebo_plugins-release.git
-      version: 0.7.1-0
+      version: 0.7.2-0
     source:
       type: git
       url: https://github.com/ipa320/cob_gazebo_plugins.git
@@ -1105,7 +1169,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_hand-release.git
-      version: 0.6.2-0
+      version: 0.6.3-0
     source:
       type: git
       url: https://github.com/ipa320/cob_hand.git
@@ -1129,7 +1193,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_manipulation-release.git
-      version: 0.7.0-0
+      version: 0.7.1-0
     source:
       type: git
       url: https://github.com/ipa320/cob_manipulation.git
@@ -1153,7 +1217,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_navigation-release.git
-      version: 0.6.5-0
+      version: 0.6.6-0
     source:
       type: git
       url: https://github.com/ipa320/cob_navigation.git
@@ -1177,7 +1241,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_perception_common-release.git
-      version: 0.6.10-0
+      version: 0.6.11-0
     source:
       type: git
       url: https://github.com/ipa320/cob_perception_common.git
@@ -1199,7 +1263,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_robots-release.git
-      version: 0.6.7-1
+      version: 0.6.8-0
     source:
       type: git
       url: https://github.com/ipa320/cob_robots.git
@@ -1220,7 +1284,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_simulation-release.git
-      version: 0.6.8-0
+      version: 0.6.9-0
     source:
       type: git
       url: https://github.com/ipa320/cob_simulation.git
@@ -1240,7 +1304,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_substitute-release.git
-      version: 0.6.6-0
+      version: 0.6.7-0
     source:
       type: git
       url: https://github.com/ipa320/cob_substitute.git
@@ -1255,7 +1319,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/cob_supported_robots-release.git
-      version: 0.6.7-0
+      version: 0.6.8-0
     source:
       type: git
       url: https://github.com/ipa320/cob_supported_robots.git
@@ -1386,7 +1450,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/stonier/cost_map-release.git
-      version: 0.3.2-0
+      version: 0.3.3-0
     source:
       type: git
       url: https://github.com/stonier/cost_map.git
@@ -1521,6 +1585,24 @@ repositories:
       url: https://github.com/OTL/cv_camera.git
       version: master
     status: developed
+  darknet_ros:
+    doc:
+      type: git
+      url: https://github.com/leggedrobotics/darknet_ros.git
+      version: master
+    release:
+      packages:
+      - darknet_ros_msgs
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/leggedrobotics/darknet_ros-release.git
+      version: 1.1.2-0
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/leggedrobotics/darknet_ros.git
+      version: master
+    status: developed
   dataspeed_can:
     doc:
       type: hg
@@ -1591,7 +1673,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/DENSORobot/denso_robot_ros-release.git
-      version: 3.0.2-0
+      version: 3.0.2-1
     source:
       type: git
       url: https://github.com/DENSORobot/denso_robot_ros.git
@@ -2181,16 +2263,13 @@ repositories:
     release:
       packages:
       - aruco_detect
-      - fiducial_detect
-      - fiducial_lib
       - fiducial_msgs
-      - fiducial_pose
       - fiducial_slam
       - fiducials
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/UbiquityRobotics-release/fiducials-release.git
-      version: 0.7.5-0
+      version: 0.8.1-0
     source:
       type: git
       url: https://github.com/UbiquityRobotics/fiducials.git
@@ -2291,7 +2370,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/frankaemika/franka_ros-release.git
-      version: 0.1.2-0
+      version: 0.2.2-0
     source:
       type: git
       url: https://github.com/frankaemika/franka_ros.git
@@ -2400,7 +2479,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-gbp/gazebo_ros_pkgs-release.git
-      version: 2.5.14-0
+      version: 2.5.14-1
     source:
       test_pull_requests: true
       type: git
@@ -2632,7 +2711,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-gbp/geometry2-release.git
-      version: 0.5.16-0
+      version: 0.5.17-0
     source:
       test_pull_requests: true
       type: git
@@ -2831,6 +2910,21 @@ repositories:
       url: https://github.com/davidfischinger/haf_grasping.git
       version: kinetic
     status: maintained
+  handeye:
+    doc:
+      type: git
+      url: https://github.com/crigroup/handeye.git
+      version: master
+    release:
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/crigroup/handeye-release.git
+      version: 0.1.0-0
+    source:
+      type: git
+      url: https://github.com/crigroup/handeye.git
+      version: master
+    status: developed
   hebiros:
     doc:
       type: git
@@ -2981,6 +3075,16 @@ repositories:
       url: https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
       version: kinetic-devel
     status: maintained
+  hls-lfom-tof-driver:
+    doc:
+      type: git
+      url: https://github.com/HLDS-GIT/hls_lfom_tof_driver.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/HLDS-GIT/hls_lfom_tof_driver.git
+      version: master
+    status: maintained
   hokuyo3d:
     doc:
       type: git
@@ -3108,6 +3212,16 @@ repositories:
       type: git
       url: https://github.com/ethz-adrl/ifopt.git
       version: master
+    release:
+      packages:
+      - ifopt
+      - ifopt_core
+      - ifopt_ipopt
+      - ifopt_snopt
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/ethz-adrl/ifopt-release.git
+      version: 1.0.2-0
     source:
       type: git
       url: https://github.com/ethz-adrl/ifopt.git
@@ -3232,6 +3346,16 @@ repositories:
       url: https://github.com/swri-robotics/imagezero_transport.git
       version: master
     status: maintained
+  imi_camera:
+    doc:
+      type: git
+      url: https://github.com/HUAJIEIMI/imi_ros.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/HUAJIEIMI/imi_ros.git
+      version: master
+    status: developed
   imu_pipeline:
     doc:
       type: git
@@ -3529,7 +3653,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/tork-a/jsk_common-release.git
-      version: 2.2.5-0
+      version: 2.2.6-0
     source:
       type: git
       url: https://github.com/jsk-ros-pkg/jsk_common.git
@@ -3564,6 +3688,7 @@ repositories:
       version: master
     release:
       packages:
+      - cmd_vel_smoother
       - contact_states_observer
       - eus_nlopt
       - eus_qp
@@ -3578,7 +3703,11 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/tork-a/jsk_control-release.git
-      version: 0.1.13-0
+      version: 0.1.14-0
+    source:
+      type: git
+      url: https://github.com/jsk-ros-pkg/jsk_control.git
+      version: master
     status: developed
   jsk_model_tools:
     release:
@@ -3636,7 +3765,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/tork-a/jsk_recognition-release.git
-      version: 1.2.3-0
+      version: 1.2.4-0
     source:
       type: git
       url: https://github.com/jsk-ros-pkg/jsk_recognition.git
@@ -3759,7 +3888,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/yujinrobot-release/kobuki-release.git
-      version: 0.7.4-0
+      version: 0.7.5-0
     source:
       type: git
       url: https://github.com/yujinrobot/kobuki.git
@@ -4026,7 +4155,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/frankaemika/libfranka-release.git
-      version: 0.1.0-3
+      version: 0.2.0-0
     source:
       test_commits: false
       type: git
@@ -4055,7 +4184,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/IntelRealSense/librealsense.git
-      version: master
+      version: legacy
     release:
       tags:
         release: release/kinetic/{package}/{version}
@@ -4064,7 +4193,7 @@ repositories:
     source:
       type: git
       url: https://github.com/IntelRealSense/librealsense.git
-      version: master
+      version: legacy
     status: maintained
   libsegwayrmp:
     doc:
@@ -4202,6 +4331,25 @@ repositories:
       url: https://github.com/easymov/log_server-release.git
       version: 0.1.4-1
     status: developed
+  loki_base_node:
+    release:
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/UbiquityRobotics-release/loki_base_node-release.git
+      version: 0.2.2-0
+  loki_robot:
+    release:
+      packages:
+      - loki_bringup
+      - loki_demos
+      - loki_description
+      - loki_nav
+      - loki_robot
+      - loki_teleop
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/UbiquityRobotics-release/loki_robot-release.git
+      version: 0.0.2-0
   look_at_pose:
     doc:
       type: git
@@ -4303,7 +4451,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/UbiquityRobotics-release/magni_robot-release.git
-      version: 0.2.1-0
+      version: 0.2.4-0
     source:
       type: git
       url: https://github.com/UbiquityRobotics/magni_robot.git
@@ -4412,6 +4560,7 @@ repositories:
       packages:
       - marti_data_structures
       - swri_console_util
+      - swri_dbw_interface
       - swri_geometry_util
       - swri_image_util
       - swri_math_util
@@ -4429,7 +4578,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/swri-robotics-gbp/marti_common-release.git
-      version: 1.2.0-0
+      version: 2.1.0-0
     source:
       type: git
       url: https://github.com/swri-robotics/marti_common.git
@@ -4482,7 +4631,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/mavlink/mavlink-gbp-release.git
-      version: 2017.12.12-0
+      version: 2018.2.2-0
     source:
       type: git
       url: https://github.com/mavlink/mavlink-gbp-release.git
@@ -4503,7 +4652,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/mavlink/mavros-release.git
-      version: 0.22.0-0
+      version: 0.23.0-0
     source:
       type: git
       url: https://github.com/mavlink/mavros.git
@@ -4727,7 +4876,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/UbiquityRobotics-release/move_basic-release.git
-      version: 0.2.2-1
+      version: 0.3.1-0
     source:
       test_pull_requests: true
       type: git
@@ -4767,7 +4916,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-gbp/moveit-release.git
-      version: 0.9.10-0
+      version: 0.9.11-0
     source:
       type: git
       url: https://github.com/ros-planning/moveit.git
@@ -4843,7 +4992,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/davetcoleman/moveit_visual_tools-release.git
-      version: 3.3.0-0
+      version: 3.4.0-0
     source:
       type: git
       url: https://github.com/davetcoleman/moveit_visual_tools.git
@@ -4930,7 +5079,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/christianrauch/msp-release.git
-      version: 2.1.0-0
+      version: 2.2.1-1
     source:
       type: git
       url: https://github.com/christianrauch/msp.git
@@ -5472,6 +5621,16 @@ repositories:
       url: https://github.com/ros/nodelet_core.git
       version: indigo-devel
     status: maintained
+  nonpersistent_voxel_layer:
+    doc:
+      type: git
+      url: https://github.com/SteveMacenski/nonpersistent_voxel_layer.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/SteveMacenski/nonpersistent_voxel_layer.git
+      version: master
+    status: maintained
   novatel_gps_driver:
     doc:
       type: git
@@ -5505,6 +5664,21 @@ repositories:
       url: https://github.com/vooon/ntpd_driver.git
       version: master
     status: maintained
+  o3m151_driver:
+    doc:
+      type: git
+      url: https://github.com/labex-imobs3/ifm_o3m151.git
+      version: master
+    release:
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/labex-imobs3-gbp/o3m151_driver-release.git
+      version: 1.2.1-0
+    source:
+      type: git
+      url: https://github.com/labex-imobs3/ifm_o3m151.git
+      version: master
+    status: developed
   object_recognition_capture:
     release:
       tags:
@@ -5837,28 +6011,17 @@ repositories:
       url: https://github.com/ros-drivers/openni_camera.git
       version: indigo-devel
     release:
+      packages:
+      - openni_camera
+      - openni_description
+      - openni_launch
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-gbp/openni_camera-release.git
-      version: 1.9.5-0
+      version: 1.11.0-0
     source:
       type: git
       url: https://github.com/ros-drivers/openni_camera.git
-      version: indigo-devel
-    status: maintained
-  openni_launch:
-    doc:
-      type: git
-      url: https://github.com/ros-drivers/openni_launch.git
-      version: indigo-devel
-    release:
-      tags:
-        release: release/kinetic/{package}/{version}
-      url: https://github.com/ros-gbp/openni_launch-release.git
-      version: 1.9.8-0
-    source:
-      type: git
-      url: https://github.com/ros-drivers/openni_launch.git
       version: indigo-devel
     status: maintained
   openrtm_aist:
@@ -5897,7 +6060,7 @@ repositories:
   optris_drivers:
     doc:
       type: git
-      url: https://github.com/ohm-ros-pkg/optris_drivers.git
+      url: https://github.com/evocortex/optris_drivers.git
       version: kinetic-devel
   orocos_kinematics_dynamics:
     doc:
@@ -5993,7 +6156,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/peterweissig/ros_parameter-release.git
-      version: 1.2.0-0
+      version: 1.2.1-0
     source:
       type: git
       url: https://github.com/peterweissig/ros_parameter.git
@@ -6015,6 +6178,11 @@ repositories:
       type: git
       url: https://github.com/peterweissig/ros_pcdfilter.git
       version: master
+    release:
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/peterweissig/ros_pcdfilter-release.git
+      version: 1.2.0-0
     source:
       type: git
       url: https://github.com/peterweissig/ros_pcdfilter.git
@@ -6220,11 +6388,12 @@ repositories:
       - phidgets_api
       - phidgets_drivers
       - phidgets_high_speed_encoder
+      - phidgets_ik
       - phidgets_imu
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-drivers-gbp/phidgets_drivers-release.git
-      version: 0.7.4-0
+      version: 0.7.5-0
     source:
       test_pull_requests: true
       type: git
@@ -6349,7 +6518,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/mrpt-ros-pkg-release/pose_cov_ops-release.git
-      version: 0.1.7-0
+      version: 0.2.0-0
     source:
       type: git
       url: https://github.com/mrpt-ros-pkg/pose_cov_ops.git
@@ -6702,6 +6871,26 @@ repositories:
       url: https://github.com/ros-planning/random_numbers.git
       version: master
     status: maintained
+  raspigibbon_ros:
+    doc:
+      type: git
+      url: https://github.com/raspberrypigibbon/raspigibbon_ros.git
+      version: kinetic-devel
+    release:
+      packages:
+      - futaba_serial_servo
+      - raspigibbon_bringup
+      - raspigibbon_description
+      - raspigibbon_ros
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/raspberrypigibbon/raspigibbon_ros-release.git
+      version: 0.1.1-1
+    source:
+      type: git
+      url: https://github.com/raspberrypigibbon/raspigibbon_ros.git
+      version: kinetic-devel
+    status: developed
   razor_imu_9dof:
     doc:
       type: git
@@ -6711,7 +6900,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/KristofRobot/razor_imu_9dof-release.git
-      version: 1.1.1-0
+      version: 1.2.0-0
     source:
       type: git
       url: https://github.com/KristofRobot/razor_imu_9dof.git
@@ -6878,7 +7067,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/intel-ros/realsense-release.git
-      version: 1.8.0-0
+      version: 1.8.1-1
     source:
       test_pull_requests: true
       type: git
@@ -6970,7 +7159,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/cra-ros-pkg/robot_localization-release.git
-      version: 2.4.1-0
+      version: 2.4.2-0
     source:
       test_pull_requests: true
       type: git
@@ -7050,6 +7239,16 @@ repositories:
       url: https://github.com/clearpathrobotics/robot_upstart.git
       version: jade-devel
     status: maintained
+  roboteq_diff_driver:
+    doc:
+      type: git
+      url: https://github.com/ecostech/roboteq_diff_driver.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/ecostech/roboteq_diff_driver.git
+      version: master
+    status: maintained
   robotis_controller_msgs:
     doc:
       type: git
@@ -7109,7 +7308,6 @@ repositories:
       packages:
       - cm_740_module
       - op3_action_module
-      - op3_direct_control_module
       - op3_head_control_module
       - op3_kinematics_dynamics
       - open_cr_module
@@ -7609,7 +7807,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-gbp/ros_control-release.git
-      version: 0.12.0-0
+      version: 0.13.0-0
     source:
       type: git
       url: https://github.com/ros-controls/ros_control.git
@@ -7642,6 +7840,7 @@ repositories:
       - effort_controllers
       - force_torque_sensor_controller
       - forward_command_controller
+      - four_wheel_steering_controller
       - gripper_action_controller
       - imu_sensor_controller
       - joint_state_controller
@@ -7653,7 +7852,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-gbp/ros_controllers-release.git
-      version: 0.13.1-0
+      version: 0.13.2-0
     source:
       type: git
       url: https://github.com/ros-controls/ros_controllers.git
@@ -7679,6 +7878,21 @@ repositories:
       type: git
       url: https://github.com/code-iai/ros_emacs_utils.git
       version: master
+    status: maintained
+  ros_environment:
+    doc:
+      type: git
+      url: https://github.com/ros/ros_environment.git
+      version: kinetic
+    release:
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/ros-gbp/ros_environment-release.git
+      version: 1.0.0-0
+    source:
+      type: git
+      url: https://github.com/ros/ros_environment.git
+      version: kinetic
     status: maintained
   ros_explorer:
     release:
@@ -7770,6 +7984,16 @@ repositories:
       url: https://github.com/yuma-m/ros_wild.git
       version: master
     status: developed
+  rosabridge:
+    doc:
+      type: git
+      url: https://github.com/ecostech/rosabridge.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/ecostech/rosabridge.git
+      version: master
+    status: maintained
   rosaria:
     doc:
       type: git
@@ -7822,6 +8046,25 @@ repositories:
       url: https://github.com/RobotWebTools/rosbridge_suite.git
       version: develop
     status: maintained
+  roscompile:
+    doc:
+      type: git
+      url: https://github.com/DLu/roscompile.git
+      version: master
+    release:
+      packages:
+      - ros_introspection
+      - roscompile
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/wu-robotics/roscompile-release.git
+      version: 1.0.0-0
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/DLu/roscompile.git
+      version: master
+    status: developed
   rosconsole_bridge:
     doc:
       type: git
@@ -8136,7 +8379,6 @@ repositories:
       url: https://github.com/ros-gbp/roswww-release.git
       version: 0.1.10-0
     source:
-      test_pull_requests: true
       type: git
       url: https://github.com/tork-a/roswww.git
       version: develop
@@ -8313,6 +8555,21 @@ repositories:
       url: https://github.com/ros-visualization/rqt_image_view.git
       version: master
     status: maintained
+  rqt_joint_trajectory_plot:
+    doc:
+      type: git
+      url: https://github.com/tork-a/rqt_joint_trajectory_plot.git
+      version: master
+    release:
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/tork-a/rqt_joint_trajectory_plot-release.git
+      version: 0.0.1-0
+    source:
+      type: git
+      url: https://github.com/tork-a/rqt_joint_trajectory_plot.git
+      version: master
+    status: developed
   rqt_launch:
     doc:
       type: git
@@ -8506,7 +8763,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-gbp/rqt_reconfigure-release.git
-      version: 0.4.8-0
+      version: 0.4.9-0
     source:
       test_pull_requests: true
       type: git
@@ -8808,7 +9065,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/tork-a/rtmros_common-release.git
-      version: 1.4.0-1
+      version: 1.4.2-0
     source:
       type: git
       url: https://github.com/start-jsk/rtmros_common.git
@@ -8851,7 +9108,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/tork-a/rtmros_nextage-release.git
-      version: 0.8.2-0
+      version: 0.8.4-0
     source:
       type: git
       url: https://github.com/tork-a/rtmros_nextage.git
@@ -8975,7 +9232,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-gbp/rviz-release.git
-      version: 1.12.13-0
+      version: 1.12.15-0
     source:
       test_pull_requests: true
       type: git
@@ -8991,7 +9248,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/davetcoleman/rviz_visual_tools-release.git
-      version: 3.4.1-0
+      version: 3.6.0-0
     source:
       test_pull_requests: true
       type: git
@@ -9083,7 +9340,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ipa320/schunk_modular_robotics-release.git
-      version: 0.6.9-0
+      version: 0.6.10-0
     source:
       type: git
       url: https://github.com/ipa320/schunk_modular_robotics.git
@@ -9129,8 +9386,23 @@ repositories:
       url: https://github.com/wjwwood/serial-release.git
       version: 1.2.1-0
     source:
+      test_commits: false
+      test_pull_requests: true
       type: git
       url: https://github.com/wjwwood/serial.git
+      version: master
+    status: maintained
+  serial_utils:
+    release:
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/wjwwood/serial_utils-release.git
+      version: 0.1.0-0
+    source:
+      test_commits: false
+      test_pull_requests: true
+      type: git
+      url: https://github.com/wjwwood/serial_utils.git
       version: master
     status: maintained
   shared_autonomy_manipulation:
@@ -9161,6 +9433,21 @@ repositories:
       type: git
       url: https://github.com/SICKAG/sick_ldmrs_laser.git
       version: kinetic
+  sick_scan:
+    doc:
+      type: git
+      url: https://github.com/SICKAG/sick_scan.git
+      version: master
+    release:
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/SICKAG/sick_scan-release.git
+      version: 0.0.11-0
+    source:
+      type: git
+      url: https://github.com/SICKAG/sick_scan.git
+      version: master
+    status: developed
   sick_tim:
     doc:
       type: git
@@ -9170,7 +9457,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/uos-gbp/sick_tim-release.git
-      version: 0.0.10-0
+      version: 0.0.12-0
     source:
       test_pull_requests: true
       type: git
@@ -9248,7 +9535,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-gbp/slam_gmapping-release.git
-      version: 1.3.9-0
+      version: 1.3.10-0
     source:
       type: git
       url: https://github.com/ros-perception/slam_gmapping.git
@@ -9361,7 +9648,6 @@ repositories:
   srv_tools:
     release:
       packages:
-      - bag_tools
       - launch_tools
       - plot_tools
       - pointcloud_tools
@@ -9542,6 +9828,16 @@ repositories:
       url: https://github.com/RobotnikAutomation/summit_xl_sim.git
       version: kinetic-devel
     status: maintained
+  svenzva_ros:
+    doc:
+      type: git
+      url: https://github.com/SvenzvaRobotics/svenzva_ros.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/SvenzvaRobotics/svenzva_ros.git
+      version: master
+    status: developed
   swri_console:
     doc:
       type: git
@@ -9858,6 +10154,16 @@ repositories:
       type: git
       url: https://github.com/tu-darmstadt-ros-pkg/topic_proxy.git
       version: master
+  towr:
+    doc:
+      type: git
+      url: https://github.com/ethz-adrl/towr.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/ethz-adrl/towr.git
+      version: master
+    status: developed
   trac_ik:
     doc:
       type: git
@@ -9869,10 +10175,11 @@ repositories:
       - trac_ik_examples
       - trac_ik_kinematics_plugin
       - trac_ik_lib
+      - trac_ik_python
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/traclabs/trac_ik-release.git
-      version: 1.4.6-0
+      version: 1.4.11-0
     source:
       type: git
       url: https://bitbucket.org/traclabs/trac_ik.git
@@ -10156,17 +10463,33 @@ repositories:
       version: master
     release:
       packages:
+      - tuw_airskin_msgs
       - tuw_gazebo_msgs
+      - tuw_geometry_msgs
       - tuw_msgs
-      - tuw_spline_msgs
+      - tuw_multi_robot_msgs
+      - tuw_nav_msgs
+      - tuw_object_msgs
+      - tuw_vehicle_msgs
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/tuw-robotics/tuw_msgs-release.git
+      version: 0.0.5-0
     source:
       type: git
       url: https://github.com/tuw-robotics/tuw_msgs.git
       version: master
     status: developed
+  tuw_multi_robot:
+    doc:
+      type: git
+      url: https://github.com/tuw-robotics/tuw_multi_robot.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/tuw-robotics/tuw_multi_robot.git
+      version: master
+    status: maintained
   tuw_rviz:
     doc:
       type: git
@@ -10350,7 +10673,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-industrial-release/universal_robot-release.git
-      version: 1.2.0-0
+      version: 1.2.1-0
     source:
       type: git
       url: https://github.com/ros-industrial/universal_robot.git
@@ -10745,7 +11068,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/lagadic/visp-release.git
-      version: 3.0.1-6
+      version: 3.1.0-2
     status: maintained
   visp_ros:
     doc:
@@ -10780,7 +11103,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/ros-gbp/visualization_tutorials-release.git
-      version: 0.10.1-0
+      version: 0.10.2-0
     source:
       test_pull_requests: true
       type: git
@@ -11035,7 +11358,7 @@ repositories:
       tags:
         release: release/kinetic/{package}/{version}
       url: https://github.com/leggedrobotics/xpp-release.git
-      version: 1.0.3-0
+      version: 1.0.5-0
     source:
       test_pull_requests: true
       type: git

@@ -120,6 +120,21 @@ repositories:
       url: https://github.com/ros/actionlib.git
       version: indigo-devel
     status: maintained
+  adi_driver:
+    doc:
+      type: git
+      url: https://github.com/tork-a/adi_driver.git
+      version: master
+    release:
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/tork-a/adi_driver-release.git
+      version: 1.0.1-0
+    source:
+      type: git
+      url: https://github.com/tork-a/adi_driver.git
+      version: master
+    status: developed
   agile_grasp:
     doc:
       type: git
@@ -235,9 +250,7 @@ repositories:
   alliance:
     release:
       packages:
-      - alliance
       - alliance_msgs
-      - rqt_alliance
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/adrianohrl/alliance-release.git
@@ -871,15 +884,11 @@ repositories:
       version: 3.5.0-5
     status: maintained
   baldor:
-    doc:
-      type: git
-      url: https://github.com/crigroup/baldor.git
-      version: master
     release:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/crigroup/baldor-release.git
-      version: 0.1.1-0
+      version: 0.1.2-0
     source:
       type: git
       url: https://github.com/crigroup/baldor.git
@@ -1325,6 +1334,10 @@ repositories:
       version: master
     status: maintained
   care_o_bot:
+    doc:
+      type: git
+      url: https://github.com/ipa320/care-o-bot.git
+      version: indigo_release_candidate
     release:
       packages:
       - care_o_bot
@@ -1334,7 +1347,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/care-o-bot-release.git
-      version: 0.6.5-0
+      version: 0.6.6-0
     status: maintained
   carl_bot:
     doc:
@@ -1672,7 +1685,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_android-release.git
-      version: 0.1.3-0
+      version: 0.1.4-0
     source:
       type: git
       url: https://github.com/ipa320/cob_android.git
@@ -1687,7 +1700,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_calibration_data-release.git
-      version: 0.6.7-0
+      version: 0.6.8-0
     source:
       type: git
       url: https://github.com/ipa320/cob_calibration_data.git
@@ -1713,7 +1726,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_command_tools-release.git
-      version: 0.6.6-0
+      version: 0.6.7-0
     source:
       type: git
       url: https://github.com/ipa320/cob_command_tools.git
@@ -1734,7 +1747,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_common-release.git
-      version: 0.6.7-0
+      version: 0.6.8-0
     source:
       type: git
       url: https://github.com/ipa320/cob_common.git
@@ -1760,11 +1773,10 @@ repositories:
       - cob_omni_drive_controller
       - cob_trajectory_controller
       - cob_twist_controller
-      - cob_undercarriage_ctrl_node
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_control-release.git
-      version: 0.6.15-0
+      version: 0.6.16-0
     source:
       type: git
       url: https://github.com/ipa320/cob_control.git
@@ -1784,7 +1796,6 @@ repositories:
       - cob_driver
       - cob_elmo_homing
       - cob_generic_can
-      - cob_head_axis
       - cob_light
       - cob_mimic
       - cob_phidget_em_state
@@ -1801,7 +1812,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_driver-release.git
-      version: 0.6.10-0
+      version: 0.6.11-0
     source:
       type: git
       url: https://github.com/ipa320/cob_driver.git
@@ -1819,7 +1830,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_environments-release.git
-      version: 0.6.5-0
+      version: 0.6.6-0
     source:
       type: git
       url: https://github.com/ipa320/cob_environments.git
@@ -1843,7 +1854,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_extern-release.git
-      version: 0.6.11-0
+      version: 0.6.12-0
     source:
       type: git
       url: https://github.com/ipa320/cob_extern.git
@@ -1861,7 +1872,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_gazebo_plugins-release.git
-      version: 0.6.6-0
+      version: 0.6.7-0
     source:
       type: git
       url: https://github.com/ipa320/cob_gazebo_plugins.git
@@ -1879,7 +1890,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_hand-release.git
-      version: 0.6.2-0
+      version: 0.6.3-0
     source:
       type: git
       url: https://github.com/ipa320/cob_hand.git
@@ -1904,7 +1915,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_manipulation-release.git
-      version: 0.6.5-1
+      version: 0.6.6-1
     source:
       type: git
       url: https://github.com/ipa320/cob_manipulation.git
@@ -1928,7 +1939,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_navigation-release.git
-      version: 0.6.5-0
+      version: 0.6.6-0
     source:
       type: git
       url: https://github.com/ipa320/cob_navigation.git
@@ -1962,7 +1973,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_perception_common-release.git
-      version: 0.6.10-0
+      version: 0.6.11-0
     source:
       type: git
       url: https://github.com/ipa320/cob_perception_common.git
@@ -1984,7 +1995,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_robots-release.git
-      version: 0.6.7-1
+      version: 0.6.8-0
     source:
       type: git
       url: https://github.com/ipa320/cob_robots.git
@@ -2005,7 +2016,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_simulation-release.git
-      version: 0.6.8-0
+      version: 0.6.9-0
     source:
       type: git
       url: https://github.com/ipa320/cob_simulation.git
@@ -2025,7 +2036,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_substitute-release.git
-      version: 0.6.6-0
+      version: 0.6.7-1
     source:
       type: git
       url: https://github.com/ipa320/cob_substitute.git
@@ -2040,7 +2051,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/cob_supported_robots-release.git
-      version: 0.6.7-0
+      version: 0.6.8-0
     source:
       type: git
       url: https://github.com/ipa320/cob_supported_robots.git
@@ -2237,7 +2248,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/stonier/cost_map-release.git
-      version: 0.3.2-0
+      version: 0.3.3-0
     source:
       type: git
       url: https://github.com/stonier/cost_map.git
@@ -2489,7 +2500,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/DENSORobot/denso_robot_ros-release.git
-      version: 3.0.2-0
+      version: 3.0.2-1
     source:
       type: git
       url: https://github.com/DENSORobot/denso_robot_ros.git
@@ -3185,6 +3196,10 @@ repositories:
       packages:
       - fanuc
       - fanuc_driver
+      - fanuc_lrmate200ib3l_moveit_config
+      - fanuc_lrmate200ib_moveit_config
+      - fanuc_lrmate200ib_moveit_plugins
+      - fanuc_lrmate200ib_support
       - fanuc_lrmate200ic5h_moveit_config
       - fanuc_lrmate200ic5l_moveit_config
       - fanuc_lrmate200ic_moveit_config
@@ -3211,7 +3226,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-industrial-release/fanuc-release.git
-      version: 0.4.3-0
+      version: 0.4.4-0
     source:
       type: git
       url: https://github.com/ros-industrial/fanuc.git
@@ -3697,7 +3712,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/JenniferBuehler/gazebo-pkgs-release.git
-      version: 1.0.1-0
+      version: 1.0.2-0
     source:
       type: git
       url: https://github.com/JenniferBuehler/gazebo-pkgs.git
@@ -3896,7 +3911,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/geometry2-release.git
-      version: 0.5.16-0
+      version: 0.5.17-0
     source:
       test_pull_requests: true
       type: git
@@ -4057,7 +4072,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/JenniferBuehler/graspit-pkgs-release.git
-      version: 1.1.2-0
+      version: 1.2.0-0
     source:
       type: git
       url: https://github.com/JenniferBuehler/graspit-pkgs.git
@@ -4786,6 +4801,16 @@ repositories:
       type: git
       url: https://github.com/ethz-adrl/ifopt.git
       version: master
+    release:
+      packages:
+      - ifopt
+      - ifopt_core
+      - ifopt_ipopt
+      - ifopt_snopt
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/ethz-adrl/ifopt-release.git
+      version: 1.0.2-0
     source:
       type: git
       url: https://github.com/ethz-adrl/ifopt.git
@@ -5526,7 +5551,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/tork-a/jsk_common-release.git
-      version: 2.2.5-0
+      version: 2.2.6-0
     source:
       test_commits: false
       type: git
@@ -5562,6 +5587,7 @@ repositories:
       version: master
     release:
       packages:
+      - cmd_vel_smoother
       - contact_states_observer
       - eus_nlopt
       - eus_qp
@@ -5576,7 +5602,11 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/tork-a/jsk_control-release.git
-      version: 0.1.13-0
+      version: 0.1.14-0
+    source:
+      type: git
+      url: https://github.com/jsk-ros-pkg/jsk_control.git
+      version: master
     status: developed
   jsk_demos:
     release:
@@ -5662,7 +5692,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/tork-a/jsk_recognition-release.git
-      version: 1.2.3-0
+      version: 1.2.4-0
     source:
       type: git
       url: https://github.com/jsk-ros-pkg/jsk_recognition.git
@@ -6382,7 +6412,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/IntelRealSense/librealsense.git
-      version: master
+      version: legacy
     release:
       tags:
         release: release/indigo/{package}/{version}
@@ -6391,7 +6421,7 @@ repositories:
     source:
       type: git
       url: https://github.com/IntelRealSense/librealsense.git
-      version: master
+      version: legacy
     status: maintained
   librms:
     doc:
@@ -6702,6 +6732,7 @@ repositories:
       packages:
       - marti_data_structures
       - swri_console_util
+      - swri_dbw_interface
       - swri_geometry_util
       - swri_image_util
       - swri_math_util
@@ -6719,7 +6750,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/swri-robotics-gbp/marti_common-release.git
-      version: 1.2.0-0
+      version: 2.1.0-0
     source:
       type: git
       url: https://github.com/swri-robotics/marti_common.git
@@ -7205,7 +7236,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/moveit-release.git
-      version: 0.7.12-0
+      version: 0.7.13-0
     source:
       type: git
       url: https://github.com/ros-planning/moveit.git
@@ -7239,7 +7270,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/JenniferBuehler/moveit-pkgs-release.git
-      version: 1.0.0-0
+      version: 1.0.4-0
     source:
       type: git
       url: https://github.com/JenniferBuehler/moveit-pkgs.git
@@ -7924,7 +7955,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/navigation-release.git
-      version: 1.12.13-0
+      version: 1.12.14-0
     source:
       test_commits: false
       test_pull_requests: true
@@ -8643,28 +8674,17 @@ repositories:
       url: https://github.com/ros-drivers/openni_camera.git
       version: indigo-devel
     release:
+      packages:
+      - openni_camera
+      - openni_description
+      - openni_launch
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/openni_camera-release.git
-      version: 1.9.5-0
+      version: 1.11.0-0
     source:
       type: git
       url: https://github.com/ros-drivers/openni_camera.git
-      version: indigo-devel
-    status: maintained
-  openni_launch:
-    doc:
-      type: git
-      url: https://github.com/ros-drivers/openni_launch.git
-      version: indigo-devel
-    release:
-      tags:
-        release: release/indigo/{package}/{version}
-      url: https://github.com/ros-gbp/openni_launch-release.git
-      version: 1.9.8-0
-    source:
-      type: git
-      url: https://github.com/ros-drivers/openni_launch.git
       version: indigo-devel
     status: maintained
   openrave_planning:
@@ -8912,7 +8932,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/peterweissig/ros_parameter-release.git
-      version: 1.2.0-0
+      version: 1.2.1-0
     source:
       type: git
       url: https://github.com/peterweissig/ros_parameter.git
@@ -8955,7 +8975,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/peterweissig/ros_pcdfilter-release.git
-      version: 1.1.0-0
+      version: 1.2.0-0
     source:
       type: git
       url: https://github.com/peterweissig/ros_pcdfilter.git
@@ -10480,7 +10500,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/KristofRobot/razor_imu_9dof-release.git
-      version: 1.1.1-0
+      version: 1.2.0-0
     source:
       type: git
       url: https://github.com/KristofRobot/razor_imu_9dof.git
@@ -10651,7 +10671,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/intel-ros/realsense-release.git
-      version: 1.8.0-0
+      version: 1.8.1-1
     source:
       test_pull_requests: true
       type: git
@@ -10952,7 +10972,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/fetchrobotics-gbp/robot_calibration-release.git
-      version: 0.5.3-0
+      version: 0.5.4-0
     source:
       type: git
       url: https://github.com/mikeferguson/robot_calibration.git
@@ -11012,7 +11032,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/jstnhuang-release/robot_markers-release.git
-      version: 0.1.1-0
+      version: 0.2.0-0
     source:
       type: git
       url: https://github.com/jstnhuang/robot_markers.git
@@ -11133,6 +11153,16 @@ repositories:
     source:
       type: git
       url: https://github.com/g/roboteq.git
+      version: master
+    status: maintained
+  roboteq_diff_driver:
+    doc:
+      type: git
+      url: https://github.com/ecostech/roboteq_diff_driver.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/ecostech/roboteq_diff_driver.git
       version: master
     status: maintained
   robotican:
@@ -12048,6 +12078,16 @@ repositories:
       version: develop
     status: end-of-life
     status_description: Replaced by the web_video_server package.
+  rosabridge:
+    doc:
+      type: git
+      url: https://github.com/ecostech/rosabridge.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/ecostech/rosabridge.git
+      version: master
+    status: maintained
   rosaria:
     doc:
       type: git
@@ -12121,10 +12161,13 @@ repositories:
       url: https://github.com/DLu/roscompile.git
       version: master
     release:
+      packages:
+      - ros_introspection
+      - roscompile
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/wu-robotics/roscompile-release.git
-      version: 0.0.2-0
+      version: 1.0.0-0
     source:
       type: git
       url: https://github.com/DLu/roscompile.git
@@ -12896,7 +12939,6 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/adrianohrl/rqt_mrta-release.git
-      version: 0.2.5-0
     source:
       test_pull_requests: true
       type: git
@@ -13327,7 +13369,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/tork-a/rtmros_common-release.git
-      version: 1.4.1-0
+      version: 1.4.2-0
     source:
       type: git
       url: https://github.com/start-jsk/rtmros_common.git
@@ -13391,7 +13433,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/tork-a/rtmros_nextage-release.git
-      version: 0.7.16-0
+      version: 0.7.16-4
     source:
       test_pull_requests: true
       type: git
@@ -13725,7 +13767,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ipa320/schunk_modular_robotics-release.git
-      version: 0.6.9-0
+      version: 0.6.10-0
     source:
       type: git
       url: https://github.com/ipa320/schunk_modular_robotics.git
@@ -13829,6 +13871,8 @@ repositories:
       url: https://github.com/wjwwood/serial-release.git
       version: 1.2.1-0
     source:
+      test_commits: false
+      test_pull_requests: true
       type: git
       url: https://github.com/wjwwood/serial.git
       version: master
@@ -13844,6 +13888,8 @@ repositories:
       url: https://github.com/wjwwood/serial_utils-release.git
       version: 0.1.0-0
     source:
+      test_commits: false
+      test_pull_requests: true
       type: git
       url: https://github.com/wjwwood/serial_utils.git
       version: master
@@ -13980,6 +14026,21 @@ repositories:
       type: git
       url: https://github.com/SICKAG/sick_ldmrs_laser.git
       version: indigo
+  sick_scan:
+    doc:
+      type: git
+      url: https://github.com/SICKAG/sick_scan.git
+      version: master
+    release:
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/SICKAG/sick_scan-release.git
+      version: 0.0.11-0
+    source:
+      type: git
+      url: https://github.com/SICKAG/sick_scan.git
+      version: master
+    status: developed
   sick_tim:
     doc:
       type: git
@@ -13989,7 +14050,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/uos-gbp/sick_tim-release.git
-      version: 0.0.10-0
+      version: 0.0.12-0
     source:
       test_pull_requests: true
       type: git
@@ -14101,7 +14162,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/slam_gmapping-release.git
-      version: 1.3.9-0
+      version: 1.3.10-0
     source:
       type: git
       url: https://github.com/ros-perception/slam_gmapping.git
@@ -14698,7 +14759,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros-industrial/staubli.git
-      version: hydro-devel
+      version: indigo-devel
     status: developed
   staubli_experimental:
     doc:
@@ -15192,6 +15253,21 @@ repositories:
       url: https://github.com/tu-darmstadt-ros-pkg-gbp/topic_proxy-release.git
       version: 0.1.1-0
     status: maintained
+  tork_moveit_tutorial:
+    doc:
+      type: git
+      url: https://github.com/tork-a/tork_moveit_tutorial.git
+      version: indigo-devel
+    release:
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/tork-a/tork_moveit_tutorial-release.git
+      version: 0.0.3-0
+    source:
+      type: git
+      url: https://github.com/tork-a/tork_moveit_tutorial.git
+      version: indigo-devel
+    status: maintained
   tork_rpc:
     doc:
       type: git
@@ -15218,6 +15294,16 @@ repositories:
       url: https://github.com/asmodehn/tornado-rosrelease.git
       version: 4.2.1-3
     status: maintained
+  towr:
+    doc:
+      type: git
+      url: https://github.com/ethz-adrl/towr.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/ethz-adrl/towr.git
+      version: master
+    status: developed
   trac_ik:
     doc:
       type: git
@@ -15229,10 +15315,11 @@ repositories:
       - trac_ik_examples
       - trac_ik_kinematics_plugin
       - trac_ik_lib
+      - trac_ik_python
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/traclabs/trac_ik-release.git
-      version: 1.4.5-0
+      version: 1.4.9-2
     source:
       type: git
       url: https://bitbucket.org/traclabs/trac_ik.git
@@ -15262,7 +15349,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/jstnhuang-release/transform_graph-release.git
-      version: 0.2.1-0
+      version: 0.3.0-0
     source:
       type: git
       url: https://github.com/jstnhuang/transform_graph.git
@@ -15695,7 +15782,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-industrial-release/universal_robot-release.git
-      version: 1.1.10-1
+      version: 1.1.11-0
     source:
       type: git
       url: https://github.com/ros-industrial/universal_robot.git
@@ -15766,7 +15853,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/JenniferBuehler/urdf-tools-pkgs-release.git
-      version: 1.0.1-0
+      version: 1.0.2-0
     source:
       type: git
       url: https://github.com/JenniferBuehler/urdf-tools-pkgs.git
@@ -16151,7 +16238,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/lagadic/visp-release.git
-      version: 3.0.1-1
+      version: 3.1.0-2
     status: maintained
   visp_ros:
     doc:
@@ -16635,7 +16722,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/leggedrobotics/xpp-release.git
-      version: 1.0.3-0
+      version: 1.0.5-0
     source:
       test_pull_requests: true
       type: git
